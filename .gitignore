@@ -1,0 +1,7 @@
+# Quarto
+/.quarto/
+*_cache/
+**/*.quarto_ipynb
+
+# macOS
+.DS_Store

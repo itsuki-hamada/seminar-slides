@@ -1,0 +1,146 @@
+@import '../base';
+
+/*-- scss:fonts --*/
+// Inter, Noto Sans JP, and Fira Code
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/*-- scss:defaults --*/
+/* Colors */
+$color-bg-primary: #3c585f;
+$color-bg-secondary: #89908f;
+$color-bg-tertiary: #89908f;
+$color-bg-quaternary: #89908f;
+$color-fg-primary: #ffe6d9;
+$color-fg-secondary: #c6bdb5;
+$color-fg-tertiary: #c6bdb5;;
+$color-fg-quaternary: #c6bdb5;;
+$color-accent-primary: #ff9e68;
+
+$body-bg: $color-bg-primary;
+$body-color: $color-fg-primary;
+$text-muted: $color-fg-quaternary;
+$link-color: $color-fg-secondary;
+
+/* Fonts */
+$font-family-sans-serif: "Inter", "Noto Sans JP", sans-serif;
+$font-family-monospace: "Fira Code", monospace;
+
+/*-- scss:rules --*/
+/* Colors */
+:root {
+  --color-bg-primary: #{$color-bg-primary};
+  --color-bg-secondary: #{$color-bg-secondary};
+  --color-bg-tertiary: #{$color-bg-tertiary};
+  --color-bg-quaternary: #{$color-bg-quaternary};
+  --color-fg-primary: #{$color-fg-primary};
+  --color-fg-secondary: #{$color-fg-secondary};
+  --color-fg-tertiary: #{$color-fg-tertiary};
+  --color-fg-quaternary: #{$color-fg-quaternary};
+  --color-accent-primary: #{$color-accent-primary};
+}
+.accent-primary {
+  color: $color-accent-primary;
+}
+
+/* Fonts */
+:root {
+  --font-family-sans-serif: #{$font-family-sans-serif};
+  --font-family-monospace: #{$font-family-monospace};
+}
+
+// Normal weight
+.reveal {
+  font-optical-sizing: auto;
+  font-weight: 350;
+}
+
+// Bold weight
+.reveal strong,
+.reveal b {
+  font-weight: 750;
+}
+
+// Ordered list marker font
+.reveal ol {
+  counter-reset: ol-counter;
+  list-style: none !important;
+  padding-left: 0;
+}
+.reveal ol li {
+  counter-increment: ol-counter;
+  position: relative;
+}
+.reveal ol li::before {
+  content: counter(ol-counter) ".";
+  font-family: $font-family-sans-serif;
+  left: -1em;
+  position: absolute;
+}
+
+/* Slide numbers */
+.reveal .slide-number {
+  bottom: 8px !important;
+  top: auto !important;
+  right: 8px !important;
+  left: auto !important;
+}
+.reveal .slide-number-a {
+  color: $color-fg-primary;
+  font-family: $font-family-sans-serif;
+}
+
+/* Title slide */
+#title-slide .title,
+#title-slide .subtitle {
+  text-align: left;
+}
+
+#title-slide .title {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+#title-slide .subtitle {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#title-slide .quarto-title-authors {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#title-slide .quarto-title-author {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+#title-slide .quarto-title-author-name {
+  font-size: 0.8em;
+  margin: 0 0 4px;
+  order: 1;
+}
+
+#title-slide .quarto-title-affiliation {
+  font-size: 0.55em;
+  margin: 0 0 4px;
+  order: 2;
+}
+
+#title-slide .quarto-title-author-email {
+  font-size: 0.35em;
+  order: 3;
+}
+
+#title-slide .date {
+  font-size: 0.55em;
+  text-align: right;
+  padding: 0px 20px;
+}
+
+/* Slide titles */
+.reveal .slides section h2 {
+  margin-bottom: 0.5em; 
+}
