@@ -1,0 +1,218 @@
+/*-- scss:defaults --*/
+/* Colors */
+$color-bg-primary: #fff;
+$color-bg-secondary: #f9f8f9;
+$color-bg-tertiary: #f4f2f4;
+$color-bg-quaternary: #eeedef;
+$color-fg-primary: rgb(56, 71, 74);
+$color-fg-secondary: rgb(71, 90, 94);
+$color-fg-tertiary: #6f6e77;
+$color-fg-quaternary: #86848d;
+$color-accent-primary: rgb(255, 0, 145);
+$color-link-primary: rgb(53, 147, 166);
+
+$body-bg: $color-bg-primary;
+$body-color: $color-fg-secondary;
+$text-muted: $color-fg-quaternary;
+$link-color: $color-link-primary;
+$code-color: $color-link-primary;
+
+/* Mermaid */
+$mermaid-node-bg-color: $color-bg-quaternary;
+$mermaid-node-fg-color: $color-bg-quaternary;
+$mermaid-label-fg-color: $color-fg-primary;
+$mermaid-edge-color: $color-fg-tertiary;
+
+/* Fonts */
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", sans-serif;
+
+/*-- scss:rules --*/
+/* Colors */
+.reveal .accent-primary {
+  color: $color-accent-primary;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local("HiraginoSans-W4");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local("HiraginoSans-W7");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Normal weight
+.reveal {
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+// Bold weight
+.reveal strong,
+.reveal b {
+  font-weight: 700;
+}
+
+/* Headings */
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: $color-fg-primary;
+}
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: $color-fg-secondary;
+}
+
+/* Title slide */
+#title-slide .title,
+#title-slide .subtitle {
+  text-align: left;
+}
+
+#title-slide .title {
+  font-size: 3em;
+}
+
+#title-slide .subtitle {
+  font-size: 1em;
+}
+
+#title-slide .quarto-title-authors {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#title-slide .quarto-title-author {
+  text-align: right;
+}
+
+#title-slide .quarto-title-author-name {
+  font-size: 0.8em;
+}
+
+#title-slide .quarto-title-author-email {
+  font-size: 0.4em;
+}
+
+#title-slide .quarto-title-affiliation {
+  font-size: 0.6em;
+}
+
+#title-slide .date {
+  font-size: 0.6em;
+  text-align: right;
+  padding: 0px 20px;
+}
+
+/* Utility classes for font size adjustment */
+.reveal .text-x09 {
+  font-size: 0.9em;
+}
+
+.reveal .text-x08 {
+  font-size: 0.8em;
+}
+
+/* Section counter */
+.reveal .slides {
+  counter-reset: section-counter;
+}
+.reveal .slides > section {
+  counter-increment: section-counter;
+}
+.reveal .slides > section:first-child {
+  counter-increment: none;
+}
+.reveal h1:not(.title) {
+  display: grid !important;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+.reveal h1:not(.title)::before {
+  content: counter(section-counter, decimal-leading-zero);
+  font-size: 0.55em;
+  font-weight: 500;
+  text-align: right;
+  padding-right: 2rem;
+  margin-right: 2rem;
+}
+
+/* Justify text with a fixed width */
+.reveal .label-justify-4em {
+  display: inline-block;
+  width: 4em;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.reveal ul.no-marker li::before {
+  content: none;
+}
+
+.reveal ul.no-marker li {
+  display: block;
+}
+
+/* Tables */
+table {
+  border-bottom: none !important;
+  
+  thead tr th {
+    border-bottom: none !important;
+  }
+  
+  tbody tr td {
+    border-bottom: none !important;
+  }
+}
+
+table thead tr th {
+  font-weight: normal !important;
+}
+
+/* Muted text */
+.reveal .muted {
+    color: $color-fg-tertiary !important;
+}
+
+/* Indentation */
+.indent-1 {
+  padding-left: 1em;
+}
+.indent-2 {
+  padding-left: 2em;
+}
+.indent-25 {
+  padding-left: 2.5em;
+}
+.indent-3 {
+  padding-left: 3em;
+}
+.indent-4 {
+  padding-left: 4em;
+}
+
+/* Itemize */
+.bullet ul {
+  list-style-type: disc !important;
+  padding-left: 1.5em !important;
+
+  li {
+    display: list-item !important;
+
+    &::before {
+      content: none !important;
+    }
+  }
+}
