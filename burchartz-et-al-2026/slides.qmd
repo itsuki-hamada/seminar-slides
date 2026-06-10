@@ -214,6 +214,8 @@ bibliography: references/references.bib
   - **結合検定が有意な場合のみ**個別の交互作用を解釈
 - 文化資本の**限界効果**を人的資本の水準ごとに算出
 
+# 結果
+
 ## 主効果
 
 ![**Fig 1.** Main effects for the vignette dimensions by country, sector and career stage](images/fig1-main-effects.jpg){fig-align="center" width="80%"}
