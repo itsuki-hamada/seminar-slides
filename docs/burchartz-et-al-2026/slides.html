@@ -6,7 +6,7 @@
 <script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
 
   <meta name="author" content="報告担当｜濱田 樹">
@@ -31,8 +31,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-de0bc1542ae43a8150d7924a9927c46f.css">
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-ba91e08841e9bad61ba5b95994b51850.css">
   <link href="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -126,13 +145,13 @@
     }
   </style>
 </head>
-<body class="quarto-dark">
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Cultural and Human Capital Signals in Hiring</h1>
-  <p class="subtitle">A Factorial Survey Experiment Across Contexts<br>Burchartz L, De Keere K, Geven, S. 2026. <em>Br. J. Sociol.</em></p>
+  <p class="subtitle">A Factorial Survey Experiment Across Contexts<br>Burchartz L, De Keere K, Geven, S. 2026. <em>Br. J. Sociol.</em><br><span class="fg-tertiary">https://doi.org/10.1111/1468-4446.70125</span></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -144,186 +163,293 @@
 
   <p class="date">2026/06/10</p>
 </section>
-<section id="問い" class="slide level2">
-<h2>問い</h2>
+<section>
+<section id="イントロダクション" class="title-slide slide level1 center">
+<h1>イントロダクション</h1>
+
+</section>
+<section id="リサーチクエスチョン" class="slide level2">
+<h2>リサーチ・クエスチョン</h2>
 <ul>
-<li>採用は<strong>ゲートキーピング</strong>の場であり，労働市場の不平等生成の鍵</li>
-<li>採用担当者は人的資本だけでなく<strong>文化資本シグナル</strong>にも依拠</li>
+<li>採用プロセスは<strong>ゲートキーピング</strong>の場であり，労働市場の不平等の鍵 <span class="citation" data-cites="bills2017 rivera2020">(<a href="#/文献" role="doc-biblioref" onclick="">Bills et al. 2017</a>; <a href="#/文献" role="doc-biblioref" onclick="">Rivera 2020</a>)</span></li>
+<li>採用担当者は人的資本だけでなく，<strong>文化資本シグナル</strong><br>にも依拠</li>
 <li>先行研究は両者を<strong>別々に</strong>扱ってきた</li>
 </ul>
-<p><strong>RQ：採用担当者は，異なる人的資本シグナルのもとで，文化資本シグナルをどう評価するのか？</strong></p>
-<ul>
-<li>鍵は両者の <strong>交互作用</strong>——エリート職以外でこそ重要に<br>なりうる</li>
-</ul>
+<div style="padding-left: 2.5em; text-indent: -2.5em;">
+<p><strong>RQ｜採用担当者は人的資本シグナルの違いによって，<br>文化資本シグナルをどう評価するのか？</strong></p>
+</div>
+</section></section>
+<section>
+<section id="理論的枠組み" class="title-slide slide level1 center">
+<h1>理論的枠組み</h1>
+
 </section>
 <section id="文化資本シグナル" class="slide level2">
 <h2>文化資本シグナル</h2>
 <ul>
-<li>文化資本とは「正統な知識・技能・趣味の所有」</li>
-<li>文化資本シグナルは現在の階級的位置と出身階級を結びつける</li>
-<li>採用プロセスでは <strong>名前・余暇活動・学歴・応募書類の美的要素</strong> などから観察可能</li>
+<li>文化資本：「正統な知識・技能・趣味の所有」<br><span class="citation" data-cites="friedman2020">(<a href="#/文献" role="doc-biblioref" onclick="">Friedman and Laurison 2020</a>)</span></li>
+<li>採用プロセスでは <strong>名前・余暇活動・学歴・応募書類の<br>美的要素</strong> などから観察可能</li>
 <li>ハイブラウなシグナルは二重に作用
 <ul>
 <li>社会空間への<strong>位置づけ</strong></li>
-<li><strong>ステレオタイプの喚起</strong>（有能さ・洗練・規律，ときに冷たさ・傲慢さも）</li>
+<li><strong>ステレオタイプの喚起</strong><span class="x08">（有能さ・洗練・規律，ときに<br>冷たさ・傲慢さも）</span></li>
 </ul></li>
 </ul>
 </section>
 <section id="シグナルの文脈依存性" class="slide level2">
 <h2>シグナルの文脈依存性</h2>
 <ul>
-<li>文化資本シグナルは<strong>普遍的通貨ではない</strong></li>
+<li>文化資本シグナルは<strong>普遍的通貨ではない</strong> <span class="citation" data-cites="erikson1996">(<a href="#/文献" role="doc-biblioref" onclick="">Erickson 1996</a>)</span></li>
 <li>価値を左右する要因
 <ul>
-<li><strong>ジェンダー</strong>（ステレオタイプの内容が変わる）</li>
-<li><strong>界</strong>（評価のされ方が異なる）——文化マッチング</li>
-<li><strong>労働者理想像</strong>（例：ソフトウェアの「オタクの若い男性」，金融の「上流階級の男性」）</li>
+<li><span class="x08">ジェンダー</span></li>
+<li><span class="x08">界（文化マッチング）</span></li>
+<li><span class="x08">労働者の理想像（ソフトウェアの「オタクの若い男性」，金融の「上流階級の男性」）</span></li>
 </ul></li>
-<li>とくに<strong>知識の曖昧性</strong>が高く，<strong>対面性</strong>が強い職種で洗練（polish）の価値が増幅</li>
+<li>とくに<strong>知識の曖昧性</strong>が高く，<strong>標準化</strong>の程度が低い職種で文化資本が重要に</li>
 </ul>
 </section>
 <section id="文化資本と人的資本の相互作用" class="slide level2">
 <h2>文化資本と人的資本の相互作用</h2>
-<p>階層研究の2つのメカニズム</p>
+<h3 id="つのメカニズム">2つのメカニズム</h3>
+<p><span class="citation" data-cites="diprete2006 erola2017">(<a href="#/文献" role="doc-biblioref" onclick="">DiPrete and Eirich 2006</a>; <a href="#/文献" role="doc-biblioref" onclick="">Erola and Kilpi-Jakonen 2017</a>)</span></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>乗算（multiplication）</strong></p>
+<p><strong>かけ算（multiplication）</strong></p>
+<div class="x08">
 <ul>
-<li>高文化資本は<strong>高人的資本があって初めて</strong>報われる</li>
-<li>Reeves &amp; De Vries (2019)：文化的消費の便益は<strong>大卒者のみ</strong></li>
+<li>高文化資本は<strong>高人的資本があってはじめて</strong>報われる</li>
+<li><span class="citation" data-cites="reeves2019"><span class="nocase">Reeves and de Vries</span> (<a href="#/文献" role="doc-biblioref" onclick="">2019</a>)</span>: 文化<br>消費の便益は<strong>大卒者のみ</strong></li>
 </ul>
+</div>
 </div><div class="column" style="width:50%;">
 <p><strong>補償（compensation）</strong></p>
+<div class="x08">
 <ul>
-<li>文化資本が<strong>人的資本の不足・曖昧さを埋める</strong></li>
-<li>Fossati et al.&nbsp;(2020)：親の上流職が訓練市場のシグナル不足を補償</li>
+<li>文化資本が<strong>人的資本の不足・<br>曖昧さを埋める</strong></li>
+<li><span class="citation" data-cites="fossati2020">Fossati et al. (<a href="#/文献" role="doc-biblioref" onclick="">2020</a>)</span>: 親の職業が<br>訓練市場での人的資本の不足を<br>補償</li>
 </ul>
+</div>
 </div></div>
 </section>
 <section id="社会移動のシグナル" class="slide level2">
 <h2>社会移動のシグナル</h2>
 <ul>
-<li>文化資本と人的資本の組み合わせは<strong>移動パターン</strong>を示唆しうる</li>
-<li>上昇移動（低い出身 × 高い人的資本）
+<li>文化資本と人的資本の組み合わせは<strong>社会移動のパターン</strong>を示唆</li>
+<li><strong>上昇移動</strong><span class="x08">（不利な出身階級 × 高人的資本）</span>
 <ul>
-<li>「期待以上の達成」→ 有能・勤勉と評価される可能性（メリトクラティックな物語）</li>
+<li><span class="x08">「期待以上の達成」→ 有能・勤勉と評価される可能性</span></li>
 </ul></li>
-<li>下降移動（上流の出身 × 低い人的資本）
+<li><strong>下降移動</strong><span class="x08">（有利な出身階級 × 低人的資本）</span>
 <ul>
-<li>階級規範からの逸脱として<strong>ペナルティ</strong>を受ける可能性</li>
+<li><span class="x08">階級規範からの逸脱として<strong>ペナルティ</strong>を受ける可能性</span></li>
 </ul></li>
 <li>メリトクラシー信念の強い社会で顕著になりうる</li>
 </ul>
 </section>
-<section id="コンテクスト①キャリア段階" class="slide level2">
-<h2>コンテクスト①：キャリア段階</h2>
-<ul>
-<li>早期キャリア（約25歳）／後期キャリア（約55歳）</li>
-<li>Friedman &amp; Laurison (2020)：キャリアが進むほど<strong>出身階級の重要性が増す</strong></li>
-<li>後期キャリア：<strong>拡張された役割</strong>・地位期待・勤続年数
-<ul>
-<li>→ 文化資本シグナルがより大きな役割を持ちうる</li>
-</ul></li>
-<li>一方で高齢労働者には「訓練可能性が低い」というステレオタイプ</li>
-</ul>
+<section id="メカニズムと効果の向き" class="slide level2">
+<h2>メカニズムと効果の向き</h2>
+<div class="{x07}">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th></th>
+<th style="text-align: center;">かけ算</th>
+<th style="text-align: center;">補償</th>
+<th style="text-align: center;">社会移動</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>高人的資本</td>
+<td>高文化資本</td>
+<td style="text-align: center;">+</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>低文化資本</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">+</td>
+</tr>
+<tr class="odd">
+<td>低人的資本</td>
+<td>高文化資本</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">+</td>
+<td style="text-align: center;">−</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>低文化資本</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section></section>
+<section>
+<section id="コンテクスト" class="title-slide slide level1 center">
+<h1>コンテクスト</h1>
+
 </section>
-<section id="コンテクスト②セクター" class="slide level2">
-<h2>コンテクスト②：セクター</h2>
-<p>ともに<strong>中間層の知識労働</strong>／資格・免許要件なし → 交互作用を観察するための <strong>most-likely case</strong></p>
+<section id="コンテクスト1キャリア段階" class="slide level2">
+<h2>コンテクスト1｜キャリア段階</h2>
+<ul>
+<li><strong>早期キャリア</strong><span class="x08">（約25歳）</span>／<strong>後期キャリア</strong><span class="x08">（約55歳）</span></li>
+</ul>
+<div class="columns">
+<div class="column" style="width:45%;">
+
+</div><div class="column" style="width:55%;">
+<div class="x08">
+<ul>
+<li>キャリアが進むほど<strong>出身階級の重要性が増す</strong></li>
+<li><strong>役割の拡張</strong>→ 文化資本シグナルが<br>より大きな役割をもちうる</li>
+<li>一方で，高齢労働者には「訓練可能性が低い」というステレオタイプも</li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="コンテクスト2セクター" class="slide level2">
+<h2>コンテクスト2｜セクター</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>ソフトウェア開発</strong></p>
+<div class="x08">
 <ul>
 <li>「オタクの若い男性」像</li>
 <li>技能・専門性の評価基準が<strong>明確</strong></li>
 <li>文化資本の役割は<strong>小さい</strong>と予想</li>
 </ul>
+</div>
 </div><div class="column" style="width:50%;">
-<p><strong>人事（HRM）</strong></p>
+<p><strong>人事管理（HRM）</strong></p>
+<div class="x08">
 <ul>
-<li>女性中心 + 管理職的伝統</li>
+<li>女性中心 ＋ 管理職的伝統</li>
 <li>知識基準が<strong>曖昧</strong>，対面性が高い</li>
 <li>文化資本の役割は<strong>大きい</strong>と予想</li>
 </ul>
+</div>
 </div></div>
+<p><span class="x08">ともに<strong>中間層の知識労働</strong>／資格・免許要件なし<br>→ 交互作用を観察するための most-likely case</span></p>
 </section>
-<section id="コンテクスト③国" class="slide level2">
-<h2>コンテクスト③：国</h2>
-<ul>
-<li><strong>ドイツ</strong>：雇用主が教育課程に関与，<strong>職業的資格</strong>が高評価．資格と「スキルがあること」が結びつく
-<ul>
-<li>→ 文化資本は人的資本と<strong>交互作用をもちにくい</strong>かも</li>
-</ul></li>
-<li><strong>イングランド</strong>：職場で技能を学ぶ，<strong>学習意欲・能力</strong>が重視される</li>
-<li>階級アイデンティティ
-<ul>
-<li>イングランド：多くが労働者階級を自認 → 階級を<strong>控えめに</strong>表現</li>
-<li>ドイツ：中間層の自認が最多</li>
-</ul></li>
-<li>※ 主目的は比較ではなく，交互作用がいかに文脈依存かを示すこと</li>
-</ul>
+<section id="コンテクスト3国" class="slide level2">
+<h2>コンテクスト3｜国</h2>
+<div class="x08">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>ドイツ</strong></th>
+<th><strong>イングランド</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>技能習得の制度</td>
+<td>雇用主が教育課程に関与，<strong>職業的資格</strong>が高評価</td>
+<td>職場で技能を学ぶ，<strong>学習意欲・能力</strong>が重視される</td>
+</tr>
+<tr class="even">
+<td>階級アイデンティティ</td>
+<td>多くが中間層を自認</td>
+<td>多くが労働者階級を自認 → 階級を<strong>控えめに</strong>表現</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section></section>
+<section>
+<section id="方法" class="title-slide slide level1 center">
+<h1>方法</h1>
+
 </section>
-<section id="方法要因配置実験" class="slide level2">
-<h2>方法：要因配置実験</h2>
+<section id="実験デザイン" class="slide level2">
+<h2>実験デザイン</h2>
+<h3 id="要因配置実験">要因配置実験</h3>
 <ul>
-<li>採用者が<strong>架空候補者のヴィネット</strong>を評価</li>
-<li>複数の属性を<strong>同時に重みづけ</strong>→ 評価過程の検証に適合，社会的望ましさバイアスを低減</li>
+<li>採用担当者が<strong>架空候補者のヴィネット</strong>を評価 <span class="citation" data-cites="auspurg2015">(<a href="#/文献" role="doc-biblioref" onclick="">Auspurg and Hinz 2015</a>)</span></li>
+<li>複数の属性を同時に重みづけ<br>→ 評価プロセスの検証に適合，社会的望ましさバイアスを低減</li>
 <li><strong>観察データでは分離困難</strong>な文化資本／人的資本シグナルを独立に操作可能</li>
 <li><strong>従属変数</strong>：採用の見込み（0–10）</li>
-<li><strong>ランダム切片モデル</strong>，ヴィネットセットを統制</li>
-<li>分析単位は<strong>ヴィネット</strong>（N = 回答者 × 8）</li>
+<li>プリテストあり，事前登録なし</li>
 </ul>
 </section>
 <section id="ヴィネットの7次元" class="slide level2">
 <h2>ヴィネットの7次元</h2>
+<div class="x07">
 <table class="caption-top">
 <thead>
 <tr class="header">
 <th>次元</th>
+<th></th>
 <th>水準</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>文化資本</td>
-<td>低／高</td>
+<td>キャリア段階</td>
+<td></td>
+<td>早期／後期（<strong>回答者内</strong>で一定）</td>
 </tr>
 <tr class="even">
-<td>キャリア段階</td>
-<td>早期／後期（<strong>回答者間</strong>で変動）</td>
+<td>文化資本</td>
+<td></td>
+<td>低／高（<a href="#/culural-capital-demension">後述</a>）</td>
 </tr>
 <tr class="odd">
+<td>人的資本</td>
 <td>教育レベル</td>
 <td>職業訓練／大学</td>
 </tr>
 <tr class="even">
+<td></td>
 <td>教育の専門性</td>
-<td>一般的な分野／職種に密接に関連した専門分野</td>
+<td>一般的な分野／職種に関連した専門分野</td>
 </tr>
 <tr class="odd">
+<td></td>
 <td>訓練参加</td>
-<td>記載なし／直近1年に職種に関連した集中訓練</td>
+<td>記載なし／直近1年間に職種に関連した集中訓練</td>
 </tr>
 <tr class="even">
+<td></td>
 <td>職務経験</td>
 <td>隣接分野・他社／同職種・同社</td>
 </tr>
 <tr class="odd">
 <td>ジェンダー</td>
+<td></td>
 <td>男性／女性</td>
 </tr>
 </tbody>
 </table>
+<p><span style="margin-top: 1em; display: block;"></span></p>
 <ul>
-<li>64ヴィネット（2<sup>6</sup>），state-of-the-art D-efficient design (lol)</li>
+<li>64 (2<sup>6</sup>) ヴィネット</li>
+<li><em>state-of-the-art D-efficient design</em> (lol)</li>
 </ul>
+</div>
 </section>
-<section id="文化資本の操作化" class="slide level2">
-<h2>文化資本の操作化</h2>
+<section id="culural-capital-demension" class="slide level2">
+<h2>文化資本の次元</h2>
 <ul>
-<li><strong>名前 ＋ 余暇活動</strong>の組み合わせ（一貫）</li>
+<li><strong>名前 ＋ 余暇活動</strong>の組み合わせ<span class="x08">（一貫して低・低 or 高・高）</span></li>
 <li>「友人と」を付加し<strong>社交性を統制</strong></li>
 </ul>
+<div class="x07">
 <table class="caption-top">
 <colgroup>
 <col style="width: 33%">
@@ -339,22 +465,23 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>余暇例</td>
+<td>余暇活動</td>
 <td>TV，ジム，カントリー／シュラーガー音楽，サッカー観戦，ランニング／サイクリング，ダーツ</td>
-<td>ゴルフ，劇場，クラシック音楽，セーリング，テニス，美術館</td>
+<td>ゴルフ，観劇，クラシック音楽，セーリング，テニス，美術館</td>
 </tr>
 <tr class="even">
 <td>名前（ドイツ）</td>
-<td>Justin, Kevin, Chantal …</td>
-<td>Ferdinand, Konstantin, Charlotte …</td>
+<td>Justin, Kevin, Jacqueline, Chantal</td>
+<td>Ferdinand, Konstantin, Charlotte, Elisabeth</td>
 </tr>
 <tr class="odd">
 <td>名前（イングランド）</td>
-<td>Wayne, Sharon, Chantelle …</td>
-<td>Rupert, Arabella, Penelope …</td>
+<td>Wayne, Kevin, Sharon, Chantelle</td>
+<td>Rupert, Theodore, Arabella, Penelope</td>
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="サンプリングとデータ" class="slide level2">
 <h2>サンプリングとデータ</h2>
@@ -362,6 +489,7 @@
 <li>直近12か月に当該分野で<strong>採用経験のある者</strong></li>
 <li>調査時期：2024年5–9月</li>
 </ul>
+<div class="x08">
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -374,7 +502,7 @@
 <tbody>
 <tr class="odd">
 <td>ドイツ</td>
-<td>求人広告のメール（連邦雇用エージェンシー）</td>
+<td>求人広告のメール<br>（連邦雇用エージェンシー）</td>
 <td>99</td>
 <td>94</td>
 </tr>
@@ -386,6 +514,8 @@
 </tr>
 </tbody>
 </table>
+</div>
+<p><span style="margin-top: 1em; display: block;"></span></p>
 <ul>
 <li>国によって<strong>サンプリング方法が大きく異なる</strong>点に留意</li>
 </ul>
@@ -393,14 +523,15 @@
 <section id="推定方法" class="slide level2">
 <h2>推定方法</h2>
 <ul>
-<li><strong>主効果</strong>：国別モデル（セクター・キャリアを統制）→ セクター別 → 早期／後期別</li>
-<li><strong>交互作用</strong>：文化資本 × 人的資本 {教育レベル・専門性・訓練・職務経験}</li>
+<li><strong>ランダム切片モデル</strong></li>
+<li><strong>主効果</strong>：国別モデル → セクター別 → キャリア段階別</li>
+<li><strong>交互作用</strong>：文化資本 × 人的資本 <span class="x08">{教育レベル・専門性・訓練・経験}</span></li>
 <li>多重検定による<strong>第1種の過誤</strong>を抑えるため
 <ul>
-<li>まず<strong>結合Wald検定</strong>で4つの交互作用が「まとめて」0と異なるか検定</li>
-<li><strong>結合検定が有意な場合のみ</strong>個別交互作用を解釈する方針</li>
+<li>まず<strong>結合 Wald 検定</strong>で4つの交互作用が「まとめて」0と異なるか検定</li>
+<li><strong>結合検定が有意な場合のみ</strong>個別の交互作用を解釈</li>
 </ul></li>
-<li>文化資本の<strong>限界効果</strong>を人的資本水準ごとに算出</li>
+<li>文化資本の<strong>限界効果</strong>を人的資本の水準ごとに算出</li>
 </ul>
 </section>
 <section id="主効果" class="slide level2">
@@ -410,11 +541,11 @@
 <section id="主効果-1" class="slide level2">
 <h2>主効果</h2>
 <ul>
-<li><strong>多くのコンテクストで文化資本シグナルは有利に働かない</strong></li>
+<li><strong>多くのコンテクストで文化資本シグナルは有利に<br>働かない</strong></li>
 <li><strong>イングランド</strong>：両分野でほぼゼロ（HR −0.06，ソフトウェア −0.02）</li>
 <li><strong>ドイツ</strong>：平均では正に効くが…
 <ul>
-<li>ソフトウェア = ゼロ，<strong>HRMで顕著（+0.25，5.78→6.04）</strong></li>
+<li>ソフトウェア = ゼロ，<strong>HRMで顕著（+0.25）</strong></li>
 </ul></li>
 <li><strong>人的資本は全コンテクストで評価される</strong>
 <ul>
@@ -424,40 +555,75 @@
 </section>
 <section id="交互作用国別" class="slide level2">
 <h2>交互作用｜国別</h2>
-<p>ドイツのみ結合検定が有意（<strong>p = 0.008</strong>）→ <strong>乗算パターン</strong></p>
+<p>ドイツのみ結合検定が有意→ <strong>かけ算</strong><span class="x08">（高い人的資本のときだけ文化資本が正に効く）</span></p>
 
-<img data-src="images/fig2-marginal-effects-country.jpg" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption"><strong>Fig 2.</strong> Marginal effects of cultural capital signals as dependent on human capital signals across countries</p><p>ドイツでは<strong>高い人的資本のときだけ</strong>文化資本が正に効く（乗算）．イングランドは概ねゼロ近傍．</p>
-</section>
+<img data-src="images/fig2-marginal-effects-country.jpg" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption"><strong>Fig 2.</strong> Marginal effects of cultural capital signals as dependent on human capital signals across countries</p></section>
 <section id="交互作用国キャリアセクター別" class="slide level2">
 <h2>交互作用｜国・キャリア・セクター別</h2>
 
-<img data-src="images/fig3-marginal-effects-country-career-sector.jpg" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption"><strong>Fig 3.</strong> Marginal effects of cultural capital signals as dependent on human capital signals across countries, by career and sector</p><p>ドイツの後期キャリアで乗算が明確</p>
+<img data-src="images/fig3-marginal-effects-country-career-sector.jpg" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption"><strong>Fig 3.</strong> Marginal effects of cultural capital signals as dependent on human capital signals across countries, by career and sector</p></section></section>
+<section>
+<section id="考察" class="title-slide slide level1 center">
+<h1>考察</h1>
+
 </section>
-<section id="考察結論" class="slide level2 scrollable">
-<h2>考察・結論</h2>
+<section id="理論的含意" class="slide level2 scrollable">
+<h2>理論的含意</h2>
 <p>RQへの答えは<strong>二層構造</strong></p>
 <ol type="1">
-<li>研究対象のフィールドでは，採用者は<strong>そもそも文化資本シグナルにあまり依拠しない</strong>（とくにイングランド）</li>
-<li>依拠する場合，<strong>人的資本シグナルが文化資本の価値の「必要条件」</strong>として働く（乗算）</li>
+<li>採用担当者は<strong>そもそも文化資本シグナルにあまり依拠<br>しない</strong><span class="x08">（とくにイングランド）</span></li>
+<li>依拠する場合，<strong>人的資本シグナルが文化資本の価値の「必要条件」</strong>として働く<span class="x08">（<strong>かけ算</strong>）</span></li>
 </ol>
 <ul>
-<li>便益は<strong>足し算ではなく組み合わせ</strong>から生じる → 文化資本の価値は「活性化」を要する</li>
-<li>Reeves &amp; De Vries (2019)（大卒のみ便益）と整合</li>
+<li>便益は<strong>足し算ではなく組み合わせ</strong>から生じる<br>→ 文化資本の価値は「活性化」を要する</li>
+<li>大卒のみ便益 <span class="citation" data-cites="reeves2019">(<a href="#/文献" role="doc-biblioref" onclick=""><span class="nocase">Reeves and de Vries</span> 2019</a>)</span> と整合的</li>
 <li>文化資本は「不確実性下の判断材料」ではなく，<strong>有能な候補者間の差別化装置</strong>として機能</li>
-<li><strong>補償・移動パターン</strong>は支持されず（相殺の可能性も）</li>
+<li><strong>補償・社会移動</strong>は支持されず<span class="x08">（相殺の可能性も）</span></li>
 </ul>
 </section>
 <section id="限界" class="slide level2">
 <h2>限界</h2>
-<ul>
-<li><strong>概念化</strong>：名前（出身）と現在の文化的実践を<strong>固定的に結合</strong>→ 両者を分離できない</li>
-<li><strong>社会的望ましさ</strong>：ドイツでは過小推定の可能性，イングランドでは望ましさに沿う回答の可能性</li>
-<li><strong>サンプリング</strong>：低回収率，国間で手法が異なる（Prolific使用）</li>
-<li><strong>検定力</strong>：交互作用で小さな効果を検出できない可能性（第2種の過誤）</li>
-<li><strong>一般化可能性</strong>：2つの業種に限定 → ブルーカラーや出身強調デザインが今後の課題</li>
-</ul>
-
+<div style="padding-left: 8em; text-indent: -8em;">
+<p><strong>概念化</strong>    ｜名前<span class="x08">（出身）</span>と文化的実践を固定</p>
+<p><strong>社会的望ましさ</strong>｜ドイツでは過小推定の可能性，イングランドでは望ましさに沿う回答の可能性</p>
+<p><strong>サンプリング</strong> ｜低回収率，国間で手法が異なる</p>
+<p><strong>検定力</strong>    ｜交互作用で小さな効果を検出できない<br>可能性<span class="x08">（第2種の過誤）</span></p>
+<p><strong>一般化可能性</strong> ｜ソフトウェアと HRM に限定</p>
+</div>
 </section>
+<section id="文献" class="slide level2 smaller scrollable">
+<h2>文献</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-auspurg2015" class="csl-entry" role="listitem">
+Auspurg, K., and T. Hinz. 2015. <em>Factorial Survey Experiments</em>. Sage. <a href="https://methods.sagepub.com/book/mono/factorial-survey-experiments/toc">https://methods.sagepub.com/book/mono/factorial-survey-experiments/toc</a>.
+</div>
+<div id="ref-bills2017" class="csl-entry" role="listitem">
+Bills, David B., Valentina Di Stasio, and Klarita Gërxhani. 2017. <span>“The <span>Demand Side</span> of <span>Hiring</span>: <span>Employers</span> in the <span>Labor Market</span>.”</span> <em>Annual Review of Sociology</em> 43: 291–310. <a href="https://doi.org/10.1146/annurev-soc-081715-074255">https://doi.org/10.1146/annurev-soc-081715-074255</a>.
+</div>
+<div id="ref-diprete2006" class="csl-entry" role="listitem">
+DiPrete, Thomas A., and Gregory M. Eirich. 2006. <span>“Cumulative Advantage as a Mechanism for Inequality: A Review of Theoretical and Empirical Developments.”</span> Journal Article. <em>Annual Review of Sociology</em> 32: 271–97. <a href="https://doi.org/10.1146/annurev.soc.32.061604.123127">https://doi.org/10.1146/annurev.soc.32.061604.123127</a>.
+</div>
+<div id="ref-erikson1996" class="csl-entry" role="listitem">
+Erickson, Bonnie H. 1996. <span>“Culture, Class, and Connections.”</span> <em>American Journal of Sociology</em> 102 (1): 217–51. <a href="https://doi.org/10.1086/230912">https://doi.org/10.1086/230912</a>.
+</div>
+<div id="ref-erola2017" class="csl-entry" role="listitem">
+Erola, Jani, and Elina Kilpi-Jakonen. 2017. <span>“Compensation and Other Forms of Accumulation in Intergenerational Social Inequality.”</span> In <em>Social Inequality Across the Generations</em>, edited by Jani Erola and Elina Kilpi-Jakonen. Edward Elgar Publishing. <a href="https://doi.org/10.4337/9781786432568.00006">https://doi.org/10.4337/9781786432568.00006</a>.
+</div>
+<div id="ref-fossati2020" class="csl-entry" role="listitem">
+Fossati, Flavia, Anna Wilson, and Giuliano Bonoli. 2020. <span>“What Signals Do Employers Use When Hiring? Evidence from a Survey Experiment in the Apprenticeship Market.”</span> <em>European Sociological Review</em> 36 (5): 760–79. <a href="https://doi.org/10.1093/esr/jcaa020">https://doi.org/10.1093/esr/jcaa020</a>.
+</div>
+<div id="ref-friedman2020" class="csl-entry" role="listitem">
+Friedman, Sam, and Daniel Laurison. 2020. <em>The <span>Class Ceiling</span>: <span>Why</span> It <span>Pays</span> to Be <span>Privileged</span></em>. 1st ed. Bristol University Press. <a href="https://doi.org/10.2307/j.ctv5zftbj">https://doi.org/10.2307/j.ctv5zftbj</a>.
+</div>
+<div id="ref-reeves2019" class="csl-entry" role="listitem">
+<span class="nocase">Reeves, Aaron, and Robert de Vries</span>. 2019. <span>“Can Cultural Consumption Increase Future Earnings? <span>Exploring</span> the Economic Returns to Cultural Capital.”</span> <em>The British Journal of Sociology</em> 70 (1): 214–40. <a href="https://doi.org/10.1111/1468-4446.12374">https://doi.org/10.1111/1468-4446.12374</a>.
+</div>
+<div id="ref-rivera2020" class="csl-entry" role="listitem">
+Rivera, Lauren A. 2020. <span>“Employer <span>Decision Making</span>.”</span> <em>Annual Review of Sociology</em> 46: 215–32. <a href="https://doi.org/10.1146/annurev-soc-121919-054633">https://doi.org/10.1146/annurev-soc-121919-054633</a>.
+</div>
+</div>
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
