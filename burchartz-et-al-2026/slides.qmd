@@ -1,6 +1,6 @@
 ---
 title: "Cultural and Human Capital Signals in Hiring"
-subtitle: "A Factorial Survey Experiment Across Contexts<br>Burchartz L, De Keere K, Geven, S. 2026. *Br. J. Sociol.*<br>[https://doi.org/10.1111/1468-4446.70125]{.fg-tertiary}"
+subtitle: 'A Factorial Survey Experiment Across Contexts<br>Burchartz L, De Keere K, Geven, S. 2026. *Br. J. Sociol.*<br><a href="https://doi.org/10.1111/1468-4446.70125" target="_blank">https://doi.org/10.1111/1468-4446.70125</a>'
 author: "報告担当｜濱田 樹"
 date: "2026/06/10"
 date-format: "YYYY/MM/DD"
