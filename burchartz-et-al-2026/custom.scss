@@ -6,20 +6,20 @@
 
 /*-- scss:defaults --*/
 /* Colors */
-$color-bg-primary: #3c585f;
-$color-bg-secondary: #89908f;
-$color-bg-tertiary: #89908f;
-$color-bg-quaternary: #89908f;
-$color-fg-primary: #ffe6d9;
-$color-fg-secondary: #c6bdb5;
-$color-fg-tertiary: #c6bdb5;;
-$color-fg-quaternary: #c6bdb5;;
-$color-accent-primary: #ff9e68;
+$color-bg-primary: #fff;
+$color-bg-secondary: #fdfdfd;
+$color-bg-tertiary: #f6f6f6;
+$color-bg-quaternary: #e6e6e6;
+$color-fg-primary: #291c18;
+$color-fg-secondary: #524846;
+$color-fg-tertiary: #66605f;
+$color-fg-quaternary: #8f8a89;
+$color-accent-primary: #b2307a;
 
 $body-bg: $color-bg-primary;
 $body-color: $color-fg-primary;
 $text-muted: $color-fg-quaternary;
-$link-color: $color-fg-secondary;
+$link-color: $color-fg-tertiary;
 
 /* Fonts */
 $font-family-sans-serif: "Inter", "Noto Sans JP", sans-serif;
@@ -38,6 +38,18 @@ $font-family-monospace: "Fira Code", monospace;
   --color-fg-quaternary: #{$color-fg-quaternary};
   --color-accent-primary: #{$color-accent-primary};
 }
+.fg-primary {
+  color: $color-fg-primary;
+}
+.fg-secondary {
+  color: $color-fg-secondary;
+}
+.fg-tertiary {
+  color: $color-fg-tertiary;
+}
+.fg-quaternary {
+  color: $color-fg-quaternary;
+}
 .accent-primary {
   color: $color-accent-primary;
 }
@@ -51,13 +63,42 @@ $font-family-monospace: "Fira Code", monospace;
 // Normal weight
 .reveal {
   font-optical-sizing: auto;
-  font-weight: 350;
+  font-weight: 400;
 }
 
 // Bold weight
 .reveal strong,
 .reveal b {
   font-weight: 750;
+}
+
+// Smaller font size
+.reveal .x09 {
+  font-size: 0.9em;
+}
+.reveal .x08 {
+  font-size: 0.8em;
+}
+.reveal .x07 {
+  font-size: 0.7em;
+}
+.reveal .x06 {
+  font-size: 0.6em;
+}
+.reveal .x05 {
+  font-size: 0.5em;
+}
+.reveal .x04 {
+  font-size: 0.4em;
+}
+.reveal .x03 {
+  font-size: 0.3em;
+}
+.reveal .x02 {
+  font-size: 0.2em;
+}
+.reveal .x01 {
+  font-size: 0.1em;
 }
 
 // Ordered list marker font
@@ -97,7 +138,7 @@ $font-family-monospace: "Fira Code", monospace;
 
 #title-slide .title {
   font-size: 2em;
-  font-weight: 800;
+  font-weight: 750;
 }
 
 #title-slide .subtitle {
@@ -143,4 +184,109 @@ $font-family-monospace: "Fira Code", monospace;
 /* Slide titles */
 .reveal .slides section h2 {
   margin-bottom: 0.5em; 
+}
+
+/* Links */
+// Underline links
+.reveal a,
+.reveal .citation a {
+  text-decoration: underline;
+}
+
+// Exclude slide number from underline
+.reveal .slide-number a {
+  text-decoration: none;
+}
+
+/* Citations */
+// Make citation font size smaller than body text
+.reveal .citation {
+  font-size: 0.8em;
+}
+
+// Make citation font size the same as body text inside .x08
+.reveal .x08 .citation {
+  font-size: 1em;
+}
+
+/* Tables */
+// Toprule and bottomrule
+.reveal table {
+  border-bottom: 1px solid $color-fg-tertiary;
+  border-top: 1px solid $color-fg-tertiary;
+}
+// Midrule: border below header row
+.reveal table thead th {
+  border-bottom: 1px solid $color-fg-tertiary !important;
+}
+// No other borders; reset font-weight without !important on bold
+.reveal table td,
+.reveal table th {
+  border: none !important;
+  font-weight: 400;
+}
+
+/* SVG diagrams */
+.reveal svg.flowchart {
+  width: 100%;
+  height: auto;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+}
+
+.reveal svg.flowchart .box {
+  fill: $color-bg-tertiary;
+}
+
+.reveal svg.flowchart .box-text {
+  fill: $color-fg-primary;
+}
+
+.reveal svg.flowchart text {
+  font-weight: 400;
+  text-anchor: middle;
+}
+
+.reveal svg.flowchart .arrow {
+  fill: $color-bg-tertiary;
+}
+
+/* Footnotes */
+.aside-footnotes {
+  font-size: 0.6em;
+}
+
+/* Logo (QR code) */
+.reveal .slide-logo {
+  max-width: 160px !important;
+  max-height: 160px !important;
+  bottom: auto !important;
+  top: 10px !important;
+  right: 10px !important;
+  left: auto !important;
+  width: 160px !important;
+  height: 160px !important;
+  object-fit: contain;
+}
+
+/* Hide logo on slides with data-hide-logo attribute */
+.reveal .slides section[data-hide-logo] .slide-logo,
+.reveal .slides section[data-hide-logo] ~ .slide-logo {
+  display: none !important;
+}
+
+/* List bullet symbols */
+// Solid bullet (U+2022)
+.reveal ul > li::marker {
+  content: "•\00A0";
+}
+
+// En dash (U+2013)
+.reveal ul ul > li::marker {
+  content: "–\00A0";
+}
+
+// Preserve indentation set by reveal.js defaults
+.reveal ul ul {
+  list-style-type: none;
 }
