@@ -213,20 +213,7 @@ format:
 
 ![**Fig 3.** Marginal effects of cultural capital signals as dependent on human capital signals across countries, by career and sector](images/fig3-marginal-effects-country-career-sector.jpg){fig-align="center" width="80%"}
 
-## 結果④：コンテクスト別の交互作用（Table 4）
-
-結合Wald検定（χ²(4)，太字 = p < 0.05）
-
-| コンテクスト | モデル | DE χ² | DE p | EN χ² | EN p |
-|---|---|---|---|---|---|
-| 結合 | 6 | 13.68 | **0.008** | 6.47 | 0.167 |
-| 早期キャリア | 9 | 9.02 | 0.061 | 7.85 | 0.097 |
-| 後期キャリア | 10 | 7.53 | 0.110 | 1.17 | 0.884 |
-| HRM | 7 | 2.30 | 0.680 | 6.77 | 0.148 |
-| ソフトウェア | 8 | 18.53 | **0.001** | 2.97 | 0.562 |
-
-- 本文の主張：**ドイツ後期キャリアで乗算が最も明確**（大学 +0.40／訓練 +0.53／経験 +0.41）
-- イングランド：4コンテクストいずれも結合効果なし（個別ではHRM・早期で経験との交互作用のみ）
+## 交互作用｜国・キャリア・セクター別
 
 ## 考察・結論
 
@@ -247,23 +234,3 @@ RQへの答えは**二層構造**
 - **サンプリング**：低回収率，国間で手法が異なる（Prolific使用）
 - **検定力**：交互作用で小さな効果を検出できない可能性（第2種の過誤）
 - **一般化可能性**：2つの産業に限定 → ブルーカラーや出身強調デザインが今後の課題
-
-## 報告者からの論点
-
-1. **本文とTable 4の不整合（要確認）**
-   - 本文：後期キャリアで乗算が最明確／HRM p=.06／ソフトウェア非有意
-   - Table 4：後期 p=.110（非有意），HRM p=.680，**ソフトウェア p=.001**
-   - 「結合検定が有意な場合のみ個別交互作用を解釈」という**自身の方針との整合性**は？
-2. **保守的操作化の代償** — 「平凡な」下位中間層は真の労働者階級ではない．乗算は「差別化」解釈と整合的か
-3. **外的妥当性** — ヴィネット評価 vs 監査研究（実際の応募）．「採用見込み」の妥当性
-4. **null をどう読むか** — 主効果も交互作用も乏しいイングランド：理論的含意か，検定力の問題か
-
-## 
-
-::: {style="text-align:center; margin-top:1.5em;"}
-ご清聴ありがとうございました
-
-<small>Burchartz, L., De Keere, K., & Geven, S. (2026).<br>
-"Cultural and Human Capital Signals in Hiring—A Factorial Survey Experiment Across Contexts."<br>
-*The British Journal of Sociology.* https://doi.org/10.1111/1468-4446.70125</small>
-:::
